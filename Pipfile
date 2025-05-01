@@ -16,6 +16,7 @@ langchain-chroma = "*"
 jq = "*"
 pytest = "*"
 beautifulsoup4 = "*"
+streamlit = "*"
 
 [dev-packages]
 
