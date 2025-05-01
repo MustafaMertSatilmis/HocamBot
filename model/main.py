@@ -6,6 +6,7 @@ load_dotenv()
 
 st.set_page_config(page_title="University AI Chatbot", layout="wide")
 
+<<<<<<< HEAD
 st.title("HOCAMBOT")
 
 
@@ -27,3 +28,10 @@ if user_input:
 
 st.markdown("---")
 st.caption("Powered by ODTÜ YZT")
+=======
+if __name__ == "__main__":
+    print("Hello METU Student")
+    res = app.invoke(input={"question": "çift Anadal Yönergeleri nelerdir?"})
+    print(res["question"])
+    print(res["generation"])
+>>>>>>> fac76c8055f9d7e4500ec1bea5b0702912176c48
