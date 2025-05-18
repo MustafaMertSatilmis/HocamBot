@@ -9,8 +9,8 @@ import time
 load_dotenv()
 
 datas = [
-    r"C:\Users\musta\OneDrive\Desktop\Projeler\HocamBot\Data\FAQ",
-    r"C:\Users\musta\OneDrive\Desktop\Projeler\HocamBot\Data\Metu_website\split_files",
+    r".\Data\FAQ",
+    r".\Data\Metu_website\split_files",
 ]
 
 docs = []
