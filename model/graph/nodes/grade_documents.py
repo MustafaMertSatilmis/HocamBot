@@ -2,7 +2,7 @@ from typing import Any, Dict
 
 from graph.chains.retrieval_grader import retrieval_grader
 from graph.state import GraphState
-
+import time
 
 def grade_documents(state: GraphState) -> Dict[str, Any]:
     """
@@ -22,6 +22,7 @@ def grade_documents(state: GraphState) -> Dict[str, Any]:
 
     filtered_docs = []
     for d in documents:
+        time.sleep(2)
         score = retrieval_grader.invoke(
             {"question": question, "document": d.page_content}
         )
