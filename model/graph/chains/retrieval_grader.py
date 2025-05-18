@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 from langchain_google_genai import ChatGoogleGenerativeAI
 from graph.state import GraphState
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", temperature=0.3)
 
 
 class GradeDocuments(BaseModel):
