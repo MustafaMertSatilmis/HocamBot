@@ -8,9 +8,12 @@ import time
 
 load_dotenv()
 
+from pathlib import Path
+
+root = Path.cwd()
 datas = [
-    r".\Data\FAQ",
-    r".\Data\Metu_website\split_files",
+    root / "Data" / "FAQ",
+    root / "Data" / "Metu_website" / "split_files",
 ]
 
 docs = []
