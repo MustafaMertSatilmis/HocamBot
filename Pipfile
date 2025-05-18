@@ -17,6 +17,7 @@ jq = "*"
 pytest = "*"
 beautifulsoup4 = "*"
 streamlit = "*"
+pysqlite3-binary = "*"
 
 [dev-packages]
 
