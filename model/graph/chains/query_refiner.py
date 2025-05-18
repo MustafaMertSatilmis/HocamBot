@@ -7,7 +7,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp")
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", temperature=0.3)
 
 
 system = """Given the following search query, refine it to improve document retrieval.
