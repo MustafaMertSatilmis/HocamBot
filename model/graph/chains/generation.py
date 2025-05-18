@@ -3,7 +3,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", temperature=0.3)
 
 prompt_template = PromptTemplate(
     input_variables=["question", "context"],
