@@ -22,7 +22,6 @@ def grade_documents(state: GraphState) -> Dict[str, Any]:
 
     filtered_docs = []
     for d in documents:
-        time.sleep(2)
         score = retrieval_grader.invoke(
             {"question": question, "document": d.page_content}
         )
