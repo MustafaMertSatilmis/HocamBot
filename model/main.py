@@ -1,12 +1,10 @@
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+from dotenv import load_dotenv
+load_dotenv()
 
 import streamlit as st
-from dotenv import load_dotenv
 from graph.graph import app  
 
-load_dotenv()
+
 
 st.set_page_config(page_title="University AI Chatbot", layout="wide")
 
